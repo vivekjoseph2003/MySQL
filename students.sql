@@ -1,0 +1,9 @@
+INSERT INTO students VALUES('1','William','18','Computer Science','90'),
+('2','Harry','22','Physics','80'),
+('3','Leo','21','Computer Science','95'),
+('4','Chris','20','English','60');
+
+select * from students where age>20;
+select * from students where department IN('Computer Science','Physics');
+select * from students where grade=90;
+select * from students where grade between 70 AND 90;
