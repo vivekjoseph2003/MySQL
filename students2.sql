@@ -6,7 +6,7 @@ INSERT INTO students2 VALUES(1, 'Asha', 'Python', 85, 'asha@mail.com', '98765432
 (6, 'Manoj', 'JavaScript', 72, 'manoj@mail.com', '9876543215', 'Delhi', NULL);
 
 SELECT course,COUNT(*) AS totalstudents FROM students2 GROUP BY course;
-SELECT course,AVG(score) AS avgscore FROM students2 GROUP BY course HAVING AVG(score)>80;
+SELECT course,AVG(score) AS avgscore FROM students2 GROUP BY course HAVING AVG(score) >80;
 SELECT name,score FROM students2 WHERE city IN('Chennai','Mumbai');
 SELECT * FROM students2 where bonus_points IS NULL;
 SELECT name FROM students2 WHERE city='Mumbai' UNION SELECT name FROM students2 WHERE city='Chennai';
